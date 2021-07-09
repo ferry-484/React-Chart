@@ -1,0 +1,67 @@
+GIT AND GITHUB COMMANDS WITH TUTORIAL
+
+// import React, { useState } from 'react';
+// import { useHistory } from "react-router-dom";
+
+// function Login() {
+//     const [user, setUser] = useState([{userName: '', password: ''}]);
+
+//     const history = useHistory();
+
+//     const HandleLogin = () => {
+//         if(user.userName === 'ferry' && user.password === 'ferrysalhan') {
+//             history.push('/product-list');
+//         } else {
+//             alert('Wrong username or password!');
+//         }
+//     }
+
+//     return (
+//         <div>
+//             <h3>Login</h3>
+//             <label style={{marginRight: 20}}>Username</label>
+//             <input type="text" placeholder="Enter username" onChange={(e) => setUser({...user, userName: e.target.value})}></input>
+//             <br></br>
+//             <br></br>
+//             <label style={{marginRight: 20}}>Password</label>
+//             <input type="password" placeholder="Enter password" onChange={(e) => setUser({...user, password: e.target.value})}></input>
+//             <br></br>
+//             <br></br>
+//             <button onClick={HandleLogin} disabled={!user.userName || !user.password}>Login</button>
+//         </div>
+//     )
+// }
+
+// export default Login
+
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+//const element = <FontAwesomeIcon icon={faShoppingCart} />;
+
+*****************************************************************************************************
+
+…or create a new repository on the command line
+echo "# React_Basic_Projects" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ferry-484/React_Basic_Projects.git
+git push -u origin main
+
+********************************************************************************************************
+…or push an existing repository from the command line
+git remote add origin https://github.com/ferry-484/React_Basic_Projects.git
+git branch -M main
+git push -u origin main
+
+********************************************************************************************************
+
+Maybe you just need to commit. I ran into this when I did:
+
+mkdir repo && cd repo
+git remote add origin /path/to/origin.git
+git add .
+
+git commit -m "initial commit"
+git push origin master
